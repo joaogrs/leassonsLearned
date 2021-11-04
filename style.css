@@ -1,7 +1,29 @@
-body { 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
   background-color: rgb(253, 251, 251);
 }
+
+#titulo {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
 #cabecalho {
   position: fixed;
   top: 0;
+  background-color: #036d52;
+  width: 100%;
+  height: 77px;
+}
+
+#minha_foto { 
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  margin-top: 110px;
+  margin-left: 20px;
 }
