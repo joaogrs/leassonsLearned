@@ -18,7 +18,7 @@ body {
   top: 0;
   background-color: rgb(20, 16, 16);
   width: 100%;
-  height: 77px;
+  height: 85px;
   display: inline;
   border-bottom: #036b52;
 }
@@ -30,10 +30,13 @@ body {
   margin-top: 110px;
   margin-left: 20px;
 }
-#cabecalho img{
-    margin-left: 10px;
-    margin-top: 5px;
+#cabecalho img {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 84px;
 }
-#cabecalho h1{
+#cabecalho h1 {
     float: right;
+    margin-right: 10px;
 }
+
