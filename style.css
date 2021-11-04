@@ -10,14 +10,17 @@ body {
 #titulo {
   margin-top: 20px;
   margin-left: 10px;
+  color: green;
 }
 
 #cabecalho {
   position: fixed;
   top: 0;
-  background-color: #036d52;
+  background-color: rgb(20, 16, 16);
   width: 100%;
   height: 77px;
+  display: inline;
+  border-bottom: #036b52;
 }
 
 #minha_foto { 
@@ -26,4 +29,11 @@ body {
   width: 250px;
   margin-top: 110px;
   margin-left: 20px;
+}
+#cabecalho img{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#cabecalho h1{
+    float: right;
 }
