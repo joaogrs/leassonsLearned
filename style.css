@@ -3,20 +3,38 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 body {
-  background-color: rgb(253, 251, 251);
+  background-color:  rgb(253, 251, 251);
 }
 
 #titulo {
-  margin-top: 30px;
+  margin-top: 37px;
   margin-left: 10px;
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
   font-size: 20px;
 }
-
+#menu{
+  width: 40%;
+  display: inline-block;
+  margin-left: 310px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 15px;
+}
+#menu li {
+  display: inline-block;
+  padding-right: 10px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+#menu ul {
+  padding-bottom: 100px;
+}
 
 #artigo {
   display: inline-block;
@@ -32,6 +50,7 @@ body {
   border-bottom: #2fc08b;
   border-style: solid;
   border-width: 3px;
+  z-index: 1;
 }
 
 #minha_descricao {
@@ -52,7 +71,7 @@ body {
 
 #cabecalho img {
   margin-left: 30px;
-  margin-top: 10px;
+  margin-top: 7px;
   width: 84px;
 }
 
@@ -66,29 +85,45 @@ body {
   margin-bottom: 80px;
 }
 
-#licoes_a_aprender{
+#licoes_a_aprender {
   display: inline-block;
-  max-width: 200px;
-  font-size: 21px;
-  margin-left: 50px;
-  border-style: solid;
-  border-color: #2fc08b ;
-  list-style: none;
+  max-width: 250px;
+  font-size: 17px;
+  margin-left: 60px;
+  list-style:none;
   padding: 20px;
   border-radius: 4%;
   background-color: white;
+  line-height: 25px;
+  box-shadow: 3px 3px 3px 3px  rgba(0, 0, 0, 0.26);
 }
 
 #licoes_aprendidas{
   display: inline-block;
-  max-width: 200px;
-  font-size: 21px;
-  border-style: solid;
+  max-width: 250px;
+  font-size: 17px;
   list-style: none;
-  border-color: #2fc08b;
   padding: 20px;
   border-radius: 4%;
   background-color: white;
+  line-height: 25px;
+  box-shadow: 3px 3px 3px 3px  rgba(0, 0, 0, 0.26);
+}
+#licoes_aprendidas h1{
+  border-bottom: #2fc08b;
+  border-style: solid;
+  border-top: none;
+  border-right:none;
+  border-left: none;
+  margin-bottom: 15px;
+}
+#licoes_a_aprender h1{
+  border-bottom: #2fc08b;
+  border-style: solid;
+  border-top: none;
+  border-right:none;
+  border-left: none;
+  margin-bottom: 15px;
 }
 
 .lado-direito {
@@ -145,3 +180,100 @@ footer{
 }
 /*Fim do Footer*/
 
+/* A sessão projetos foi retirada de um projeto meu do github*/
+.sessao-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.sessao-header h1{
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  color: rgb(92, 88, 88);
+  border-bottom: solid 3px #2fc08b;
+  margin-bottom: 1rem;
+}
+
+.projetos{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+  z-index: 0;
+}
+.card{
+  width: 20rem;
+  height: 30rem;
+  position: relative;
+}
+.card-img-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color:rgb(92, 88, 88) ;
+  border-radius: .5rem;
+}
+.card-img-wrapper img{
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  opacity: .8;
+  transition: opacity .3s;
+}
+.card:hover .card-img-wrapper img{
+  opacity: .5;
+}
+.card-info{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-shadow: 0 0.2rem 0.3rem rgba(0,0,0, .6);
+  transition: all .3s;
+}
+.card-info h2{
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+
+}
+.card-info h3{
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font: bolder;
+  color: #2fc08b ;
+  margin-bottom: 1.5rem;
+}
+.card-info p{
+  font-family: var(--font-primary);
+  color: white;
+  width: 80%;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.card:hover .card-info{
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
+.btn{
+  background-color: #2fc08b; 
+  background: -webkit-linear-gradient(to right, #2fc08b, #F09819);
+  background: linear-gradient(to right, #2fc08b,#2fc08b);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: white;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+.card-info button{
+  width: 8rem;
+  height: 2.5rem;
+}
+#btn2 {
+  background: rgb(116, 116, 116);
+}
